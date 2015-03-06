@@ -1,56 +1,165 @@
-body{
+body {
   background: rgb(36, 52, 41);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: 'Gruppo', cursive;
-  margin: 0rem;
-  -moz-background-size:cover;
-  -webkit-background-size:cover;
 }
 
-header[role="banner"]{
+header {
   background-color: rgba(127, 171, 141, 0.96);
-  box-shadow: 0 0 0.9rem rgb(86, 100, 90);
-  left: 0rem;
   position: fixed;
-  top: 0rem;
   z-index: 10000;
+  width: 100%;
 }
 
-nav  ul{
+.navList {
   bottom: 0rem;
   color: white;
   position: absolute;
   right: 0rem;
 }
 
-nav  ul  li{
+.navList li {
   display: inline;
   font-size: 1.5rem;
   padding: 0.5rem;
 }
-nav  ul  li:hover{
+
+.navList li:hover {
   color: black;
   cursor: pointer;
   transition: color 0.5s;
 }
 
-.el-footer{
-  background-color: rgba(127, 171, 141, 1);
+footer {
+  background-color: rgb(127, 171, 141);
   bottom: 0rem;
-  left: 0rem;
-  padding: 0.1rem 0 0.1rem 0;
+  padding: 0.1rem 0;
   position: fixed;
   z-index: 10000;
+  text-align: center;
+  width: 100%;
 }
 
-.el-footer p{
+footer p {
   color: white;
+  font-size: 1.2rem;
+}
+
+.main-logo {
+  color: #FFF;
+  font-size: 3rem;
+  padding: 0 0 0.5rem 0.4rem;
+}
+
+section {
+  margin-top: -20rem;
+}
+
+/*Form*/
+
+form {
+  bottom: 10.9rem;
+  left: 32rem;
+  position: fixed;
+  width: 100%;
+  visibility: hidden;
+}
+
+select,
+input,
+label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.3rem;
+}
+
+fieldset {
+  background-color: rgba(198, 229, 198, 0.93);
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  width: 20%;
+}
+
+fieldset p {
+  text-align: center;
+  margin: 0.5rem 0 0.5rem 0.3rem;
+}
+
+legend {
+  background: #FFF;
+  border-top-right-radius: 0.5rem;
+  color: rgb(18, 18, 39);
+  padding: 0.6rem;
+}
+
+input[type="submit"] {
+  margin-top: 0.5rem;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.2rem;
+  margin-top: 0.4rem;
+}
+
+div[role=button] {
+  background-color: rgb(127, 171, 141);
+  border-radius: 0.5rem;
+  color: #FFF;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  position: absolute;
+  right: 36.5rem;
+  top: 25rem;
+  text-align: center;
+  width: 10%;
+  z-index: 9999;
+}
+
+div[role=button]:hover {
+  box-shadow: 0 0 1rem rgb(86, 100, 90);
+  color: black;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+video {
+  background-size: cover;
+  bottom: 0rem;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: 0rem;
+  width: auto;
+  z-index: -100;
+}
+
+.serviceInfo {
+  background-color: rgb(36, 52, 41);
+  bottom: 0rem;
+  color: white;
+  font-size: 2.2rem;
+  height: 10rem;
+  padding-top: 0.5rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  color: #FFF;
   font-size: 1.2rem;
   text-align: center;
 }
 
-.feat-box{
-  width: 100%;
+.tagLine {
+  color: #FFF;
+  font-size: 5rem;
+  margin-top: 28rem;
+  text-align: center;
+  z-index: 100;
+}
+
+.orangeB {
+  color: orange;
 }
